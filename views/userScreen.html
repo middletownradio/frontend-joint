@@ -1,0 +1,59 @@
+<div class="manage-users-btn">
+  <a href="http://willshare.com/cs495/admin/frontend/#/select"><button>Select Screen</button></a>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1>User Manager</h1>
+    </div>
+  </div>
+</div>
+
+<div class="container user-container">
+  <div class="row">
+    <div class="col-12">
+      <table>
+        <thead>
+          <th>Email</th>
+          <th>Email Recipient</th>
+          <th>Delete</th>
+        </thead>
+        <tbody>
+          <tr ng-repeat="user in users">
+            <td><input type="text" ng-model="user.email" required></td>
+            <td class="td-btn">
+              <button ng-show="user.winner != 1" ng-click="makeAdmin(user.id)" > Make Recipient </button>
+              <button ng-show="user.winner == 1" ng-click="deleteAdmin(user.id)"> Current Admin </button>
+            </td>
+            <td class="td-btn"><button ng-click="deleteUser(user.id)" > Delete </button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<button ng-click="showNewUser()"> New User</button>
+
+<div class="container user-container" ng-show="newUserTable">
+  <div class="row">
+    <div class="col-12">
+      <table>
+        <thead>
+          <th>Email</th>
+          <th>Password</th>
+          <th>Save</th>
+
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" ng-model="newUser.email" required></td>
+            <td><input type="password" ng-model="newUser.password" required></td>
+            <td class="td-btn"><button ng-click="saveNewUser(newUser)" > Save New User </button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

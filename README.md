@@ -1,1 +1,1 @@
-# frontend-joint
+# capstone-frontend-joint

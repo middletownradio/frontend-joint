@@ -1,0 +1,170 @@
+/* GENERAL */
+h1{
+    margin-top: 10px;
+}
+
+a{
+    color:#b57647;
+}
+
+/* ADMIN PANEL */
+body{
+    background: linear-gradient(180deg, #9cc2fc 40%, #3586ff 80%, #1d76fc);
+}
+
+.admin-container{
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    margin: -155px 0 0 -202px;
+    background: #f8f8f8;
+    text-align: center;
+    border: 2px solid #3d3d3d;
+}
+
+.fa{
+    margin-right: 8px;
+    padding: 4px;
+}
+
+input[type=text], input[type=password], input[type=email]{
+    padding: 12px 20px;
+    margin-bottom: 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type=submit]{
+    background: #1f3b6d;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 8px;
+    text-align: center;
+    width: 140px;
+    margin-top: 10px;
+}
+
+button[type=submit]:hover{
+    background: #385b9b;
+    font-size: 12px;
+}
+
+/* ADMIN DATABASE SELECTION */
+
+.manage-users-btn button{
+  float: right;
+  background: #1f3b6d;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 8px;
+  text-align: center;
+  width: 140px;
+  margin-top: 20px;
+  margin-right: 30px;
+}
+
+.manage-users-btn button:hover{
+  background: #385b9b;
+  font-size: 12px;
+}
+
+.title h1{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 45px;
+}
+
+.database-applications{
+    position: absolute;
+    width: 750px;
+    height: 260px;
+    top: 50%;
+    left: 50%;
+    margin: -150px 0 0 -375px;
+    background: #f8f8f8;
+    text-align: center;
+    border: 2px solid #3d3d3d;
+}
+
+.database-applications .admin-title{
+    font-size: 40px;
+}
+
+.db-container button{
+    display: inline;
+    padding: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: #e7e7e7;
+    border-bottom: 2px solid #000000;
+    border-radius: 5px;
+    text-shadow: 2px 2px #ffffff;
+    font-size: 30px;
+}
+
+.db-container button:hover{
+    background: #dbdbdb;
+}
+
+/* USERS */
+table{
+  border: 1px solid #000000;
+  background: #ffffff;
+  width: 100%;
+}
+
+th{
+  padding: 5px;
+  border-bottom: 1px solid #000000;
+  background: #22477e;
+  color: #ffffff;
+}
+
+td{
+  padding: 5px;
+  border-bottom: 1px solid #000000;
+  border-right: 1px solid #000000;
+}
+
+td.td-btn{
+  text-align: center;
+}
+
+.user-container input[type=text]{
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+
+h1{
+  text-align: center;
+}
+
+/* Login Sent Screen */
+.back-login button{
+  background: #1f3b6d;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 8px;
+  text-align: center;
+  width: 140px;
+  margin-top: 10px;
+}
+
+.back-login button:hover{
+    background: #385b9b;
+    font-size: 12px;
+}
+
+.back-login p{
+  text-align: center;
+}
